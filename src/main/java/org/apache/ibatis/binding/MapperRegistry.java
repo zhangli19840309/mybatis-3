@@ -15,18 +15,19 @@
  */
 package org.apache.ibatis.binding;
 
+import org.apache.ibatis.builder.annotation.MapperAnnotationBuilder;
+import org.apache.ibatis.io.ResolverUtil;
+import org.apache.ibatis.session.Configuration;
+import org.apache.ibatis.session.SqlSession;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.ibatis.builder.annotation.MapperAnnotationBuilder;
-import org.apache.ibatis.io.ResolverUtil;
-import org.apache.ibatis.session.Configuration;
-import org.apache.ibatis.session.SqlSession;
-
 /**
+ * HashMap knownMappers ，用来保存 Mapper 和 MapperProxyFactory 的对应关系
  * @author Clinton Begin
  * @author Eduardo Macarron
  * @author Lasse Voss
